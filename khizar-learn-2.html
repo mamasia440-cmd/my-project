@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#101e22">
+<title>Khizar Learn — سیکھیں، کھیلیں، آگے بڑھیں</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script src="https://unpkg.com/html5-qrcode@2.3.8/html5-qrcode.min.js"></script>
+<style>
+:root{--bg:#101e22;--panel:#17282e;--panel2:#1d3239;--line:#344950;--text:#f1f7f8;--muted:#9aadb2;--green:#58cc02;--green2:#83df35;--blue:#3d5afe;--yellow:#ffc928;--red:#ff5263;--purple:#bd70f4;--shadow:0 18px 50px #0003}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Noto Nastaliq Urdu",sans-serif;min-height:100vh}button,input,select,textarea{font:inherit}button{cursor:pointer;border:0}a{color:inherit;text-decoration:none}.app{display:grid;grid-template-columns:260px minmax(0,1fr) 330px;min-height:100vh}.sidebar{border-left:1px solid var(--line);padding:24px 18px;position:sticky;top:0;height:100vh;background:#122126}.brand{font-size:28px;font-weight:900;color:var(--green);text-align:center;direction:ltr;letter-spacing:-1px;margin:0 0 28px}.brand small{display:block;color:var(--muted);font-size:11px;letter-spacing:2px}.nav{display:grid;gap:8px}.nav button{background:transparent;color:var(--text);text-align:right;padding:14px 15px;border-radius:14px;font-weight:700;display:flex;align-items:center;gap:13px;border:1px solid transparent}.nav button:hover,.nav button.active{background:var(--panel2);border-color:#3586a1;color:#62d7ff}.nav .ico{font-size:22px;width:28px;text-align:center}.side-bottom{position:absolute;bottom:22px;right:18px;left:18px;color:var(--muted);font-size:12px;text-align:center}.main{padding:25px clamp(16px,3vw,42px);max-width:1100px;width:100%;margin:auto}.topbar{display:flex;justify-content:space-between;align-items:center;gap:14px;margin-bottom:24px}.mobile-brand{display:none;font-size:22px;font-weight:900;color:var(--green);direction:ltr}.topstats{display:flex;gap:10px;flex-wrap:wrap}.pill{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:9px 13px;font-weight:800;direction:ltr}.actions{display:flex;gap:9px;flex-wrap:wrap}.btn{padding:11px 16px;border-radius:12px;background:var(--panel2);color:var(--text);border:1px solid var(--line);font-weight:700}.btn.green{background:var(--green);color:#163000;border-color:var(--green)}.btn.blue{background:var(--blue);color:white;border-color:var(--blue)}.btn:disabled{opacity:.45;cursor:not-allowed}.hero{background:linear-gradient(115deg,#45b900,#75d900);color:#10210a;padding:25px;border-radius:22px;display:flex;justify-content:space-between;align-items:center;gap:20px;box-shadow:var(--shadow);margin-bottom:20px}.hero h1{font-size:clamp(22px,3vw,34px);margin:0 0 8px}.hero p{margin:0;opacity:.85}.hero-mark{font-size:60px}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.card{background:var(--panel);border:1px solid var(--line);border-radius:19px;padding:20px;min-width:0}.card h2,.card h3{margin:0 0 12px}.muted{color:var(--muted)}.section-head{display:flex;justify-content:space-between;align-items:center;margin:27px 0 14px}.section-head h2{font-size:21px;margin:0}.course-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px}.course{background:var(--panel);border:1px solid var(--line);padding:17px;border-radius:17px;transition:.2s}.course:hover{transform:translateY(-3px);border-color:var(--green)}.flag{font-size:32px}.course h3{margin:9px 0 5px}.course p{color:var(--muted);font-size:13px;min-height:34px}.bar{height:9px;background:#31444a;border-radius:20px;overflow:hidden;margin:12px 0}.bar span{display:block;height:100%;background:var(--green);border-radius:20px}.path{display:flex;flex-direction:column;align-items:center;gap:17px;padding:18px 0}.node{width:76px;height:76px;border-radius:50%;background:var(--green);color:#183000;font-size:29px;box-shadow:0 7px 0 #318700;display:grid;place-items:center}.node.locked{background:#34474d;color:#72858a;box-shadow:0 7px 0 #26383d}.node:nth-child(even){transform:translateX(55px)}.node:nth-child(odd){transform:translateX(-40px)}.task{display:flex;justify-content:space-between;gap:12px;align-items:center;padding:12px 0;border-bottom:1px solid var(--line)}.task:last-child{border:0}.big{font-size:27px;font-weight:800}.page{display:none}.page.active{display:block}.search{width:100%;padding:14px 16px;background:var(--panel);border:1px solid var(--line);border-radius:13px;color:white;outline:none;margin:10px 0 15px}.search:focus{border-color:var(--green)}.lesson-wrap{max-width:760px;margin:10px auto}.lesson-top{display:flex;align-items:center;gap:14px}.lesson-progress{height:12px;background:#34474d;border-radius:20px;flex:1;overflow:hidden}.lesson-progress span{display:block;background:var(--green);height:100%;width:0}.lesson-box{text-align:center;padding:30px 12px}.lesson-box h2{font-size:clamp(22px,4vw,32px)}.mascot{font-size:75px;margin:12px}.word-bubble{display:inline-block;padding:13px 20px;border:1px solid var(--line);border-radius:15px;font-size:21px;margin:10px}.word-options{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin:25px 0}.word{background:var(--panel2);color:white;border:2px solid var(--line);padding:13px 18px;border-radius:12px}.word.selected{border-color:var(--green);background:#29451e}.lesson-footer{display:flex;justify-content:space-between;border-top:1px solid var(--line);padding-top:20px}.modal{position:fixed;inset:0;background:#000b;display:none;place-items:center;padding:18px;z-index:20}.modal.show{display:grid}.modal-box{background:var(--panel);border:1px solid var(--line);border-radius:20px;padding:22px;width:min(520px,100%);max-height:90vh;overflow:auto;box-shadow:var(--shadow)}.modal-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:15px}.close{background:transparent;color:white;font-size:25px}.qrbox{background:white;border-radius:14px;padding:15px;width:max-content;margin:18px auto;min-height:160px;min-width:160px;display:grid;place-items:center}.formrow{display:grid;gap:7px;margin:12px 0}.formrow input,.formrow textarea,.formrow select{background:#102126;border:1px solid var(--line);border-radius:11px;padding:12px;color:white;width:100%}.two{display:grid;grid-template-columns:1fr 1fr;gap:10px}.notice{padding:12px;border:1px solid #79622b;background:#302a19;border-radius:12px;color:#ffe19a;font-size:13px;line-height:1.7}.success{color:#9de66c}.rank{display:flex;justify-content:space-between;padding:13px;border-bottom:1px solid var(--line)}.connector{display:flex;align-items:center;justify-content:space-between;gap:10px;border:1px solid var(--line);padding:13px;border-radius:13px;margin:10px 0}.toast{position:fixed;bottom:22px;left:50%;transform:translateX(-50%);background:#e9ffe0;color:#173000;padding:12px 18px;border-radius:12px;font-weight:800;display:none;z-index:30}.toast.show{display:block}.right-panel{border-right:1px solid var(--line);padding:25px 17px;background:#122126}.right-panel .card{margin-bottom:15px}.right-panel .mascot{font-size:56px;text-align:center}.footer{text-align:center;color:var(--muted);padding:35px 10px;font-size:12px}
+@media(max-width:1100px){.app{grid-template-columns:220px minmax(0,1fr)}.right-panel{display:none}.course-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:700px){.app{display:block}.sidebar{position:fixed;z-index:10;bottom:0;top:auto;height:auto;width:100%;padding:7px 8px;border:0;border-top:1px solid var(--line)}.brand,.side-bottom{display:none}.nav{display:flex;justify-content:space-around;gap:2px}.nav button{padding:8px 5px;display:flex;flex-direction:column;gap:2px;font-size:10px;text-align:center;flex:1}.nav .ico{font-size:19px}.main{padding:15px 13px 95px}.mobile-brand{display:block}.topbar{align-items:flex-start}.topstats{gap:5px}.pill{font-size:12px;padding:7px}.hero{padding:19px}.hero-mark{font-size:43px}.grid{grid-template-columns:1fr}.course-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.course{padding:13px}.course h3{font-size:15px}.actions .btn{font-size:12px;padding:9px}.lesson-box{padding:18px 5px}.lesson-footer{gap:10px}.two{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="app">
+<aside class="sidebar">
+  <div class="brand">khizar learn<small>LEARN • PLAY • GROW</small></div>
+  <nav class="nav" id="nav">
+    <button class="active" data-page="home"><span class="ico">🏠</span>سیکھیں</button>
+    <button data-page="courses"><span class="ico">🌍</span>زبانیں</button>
+    <button data-page="practice"><span class="ico">🎧</span>پریکٹس</button>
+    <button data-page="leaderboard"><span class="ico">🏆</span>لیڈر بورڈ</button>
+    <button data-page="connectors"><span class="ico">🔌</span>کنیکٹرز</button>
+    <button data-page="profile"><span class="ico">👤</span>پروفائل</button>
+  </nav>
+  <div class="side-bottom">© 2026 Khizar Learn<br>آپ کی زبان، آپ کا سفر</div>
+</aside>
+
+<main class="main">
+<header class="topbar">
+ <div><div class="mobile-brand">khizar learn</div><div class="muted" id="greeting">خوش آمدید، سیکھنے والے!</div></div>
+ <div class="topstats">
+  <div class="pill">❤️ <span id="hearts">5</span></div><div class="pill">⭐ <span id="xp">0</span> XP</div><div class="pill">🔥 <span id="streak">1</span></div>
+ </div>
+</header>
+
+<section class="page active" id="home">
+ <div class="hero"><div><h1>آج کچھ نیا سیکھیں! ✨</h1><p>ہر روز تھوڑی سی پریکٹس، بڑی کامیابی۔</p><div class="actions" style="margin-top:17px"><button class="btn" style="background:#173000;color:white" onclick="startLesson()">سبق شروع کریں →</button><button class="btn" onclick="openQR()">📱 ڈیوائس کنیکٹ کریں</button></div></div><div class="hero-mark">🦉</div></div>
+ <div class="grid">
+  <div class="card"><h3>🎯 آج کا ہدف</h3><div class="big"><span id="dailyDone">0</span>/3</div><div class="bar"><span id="dailyBar" style="width:0%"></span></div><p class="muted">تین سبق مکمل کرکے آج کا ہدف حاصل کریں۔</p></div>
+  <div class="card"><h3>📈 آپ کی ترقی</h3><div class="big" id="level">Level 1</div><p class="muted">اگلے لیول کے لیے مزید XP حاصل کریں۔</p><div class="bar"><span id="levelBar" style="width:0%"></span></div></div>
+ </div>
+ <div class="section-head"><h2>آپ کا سیکھنے کا راستہ</h2><span class="muted">Unit 1 · بنیاد</span></div>
+ <div class="grid">
+  <div class="card"><h3>🇬🇧 English Foundations</h3><p class="muted">الفاظ، جملے اور روزمرہ گفتگو</p><div class="path"><button class="node" onclick="startLesson()">★</button><button class="node locked" onclick="toast('پہلے پچھلا سبق مکمل کریں')">★</button><button class="node locked" onclick="toast('یہ سبق جلد دستیاب ہوگا')">🔒</button></div></div>
+  <div class="card"><h3>⚡ روزانہ مشن</h3><div class="task"><span>ایک سبق مکمل کریں</span><b>+10 XP</b></div><div class="task"><span>پانچ الفاظ سنیں</span><b>+5 XP</b></div><div class="task"><span>ایک کوئز حل کریں</span><b>+10 XP</b></div><div class="task"><span>آج کا انعام</span><b class="success">🎁</b></div></div>
+ </div>
+ <div class="section-head"><h2>مقبول زبانیں</h2><button class="btn" onclick="go('courses')">سب دیکھیں</button></div>
+ <div class="course-grid" id="homeCourses"></div>
+</section>
+
+<section class="page" id="courses">
+ <div class="section-head"><h2>🌍 اپنی پسند کی زبان سیکھیں</h2></div>
+ <input class="search" id="courseSearch" placeholder="🔍 زبان یا کورس تلاش کریں..." oninput="renderCourses()">
+ <div class="course-grid" id="allCourses"></div>
+</section>
+
+<section class="page" id="practice">
+ <div class="section-head"><h2>🎧 پریکٹس زون</h2></div>
+ <div class="grid">
+  <div class="card"><h3>🔊 لفظ سنیں</h3><p class="muted">لفظ کی آواز سنیں اور اسے دہرائیں۔</p><div class="big" style="margin:18px 0" dir="ltr">Beautiful</div><button class="btn green" onclick="speak('Beautiful','en-US')">🔊 تلفظ سنیں</button></div>
+  <div class="card"><h3>🧠 فوری کوئز</h3><p>“Apple” کا اردو مطلب کیا ہے؟</p><div class="word-options" style="justify-content:flex-start"><button class="word" onclick="quickQuiz(this,false)">کیلا</button><button class="word" onclick="quickQuiz(this,true)">سیب</button><button class="word" onclick="quickQuiz(this,false)">پانی</button></div><p id="quizFeedback" class="muted"></p></div>
+  <div class="card"><h3>🎙️ بولنے کی مشق</h3><p class="muted">مائیکروفون سے اپنی آواز ریکارڈ کریں۔</p><button class="btn blue" onclick="recordVoice()">🎤 ریکارڈنگ شروع کریں</button><p id="recordStatus" class="muted"></p></div>
+  <div class="card"><h3>📝 آج کے الفاظ</h3><div class="task"><span>Learn — سیکھنا</span><button class="btn" onclick="speak('Learn','en-US')">🔊</button></div><div class="task"><span>Friend — دوست</span><button class="btn" onclick="speak('Friend','en-US')">🔊</button></div><div class="task"><span>Beautiful — خوبصورت</span><button class="btn" onclick="speak('Beautiful','en-US')">🔊</button></div></div>
+ </div>
+</section>
+
+<section class="page" id="leaderboard">
+ <div class="section-head"><h2>🏆 ہفتہ وار لیڈر بورڈ</h2></div>
+ <div class="card"><p class="muted">یہ نمونہ رینکنگ ہے۔ حقیقی عالمی رینکنگ کے لیے آن لائن ڈیٹا بیس درکار ہے۔</p><div class="rank"><b>🥇 1. Ayesha</b><strong>2,450 XP</strong></div><div class="rank"><b>🥈 2. Ahmed</b><strong>2,120 XP</strong></div><div class="rank"><b>🥉 3. Sara</b><strong>1,890 XP</strong></div><div class="rank"><b>⭐ 4. You</b><strong id="rankXP">0 XP</strong></div></div>
+</section>
+
+<section class="page" id="connectors">
+ <div class="section-head"><h2>🔌 میرے کنیکٹرز</h2><button class="btn green" onclick="openConnector()">+ نیا کنیکٹر</button></div>
+ <div class="notice">یہاں آپ اپنی پسند کے تعلیمی لنکس، لغات، ویڈیو چینلز یا اسٹڈی ٹولز محفوظ کر سکتے ہیں۔ صرف قابلِ اعتماد ویب سائٹس شامل کریں۔</div>
+ <div class="card" style="margin-top:15px"><div id="connectorList"></div></div>
+</section>
+
+<section class="page" id="profile">
+ <div class="section-head"><h2>👤 میرا پروفائل</h2><button class="btn" onclick="editProfile()">پروفائل تبدیل کریں</button></div>
+ <div class="card"><div class="mascot">🦉</div><h2 id="profileName" style="text-align:center">Khizar Learner</h2><p class="muted" style="text-align:center">Language Explorer</p><div class="grid" style="margin-top:20px"><div class="card"><span class="muted">کل XP</span><div class="big" id="profileXP">0</div></div><div class="card"><span class="muted">مکمل اسباق</span><div class="big" id="profileLessons">0</div></div><div class="card"><span class="muted">اسٹریک</span><div class="big" id="profileStreak">1 🔥</div></div><div class="card"><span class="muted">لیول</span><div class="big" id="profileLevel">1</div></div></div></div>
+ <div class="card" style="margin-top:15px"><h3>⚙️ سیٹنگز</h3><div class="task"><span>ساؤنڈ ایفیکٹس</span><input type="checkbox" id="soundToggle" checked></div><div class="task"><span>تلفظ کی آواز</span><input type="checkbox" id="voiceToggle" checked></div><div class="task"><span>زبان / Language</span><select id="uiLang" onchange="setUILang()"><option>اردو</option><option>English</option></select></div><button class="btn" style="margin-top:12px" onclick="resetData()">پروگریس ری سیٹ کریں</button></div>
+</section>
+
+<section class="page" id="lesson">
+ <div class="lesson-wrap">
+  <div class="lesson-top"><button class="close" onclick="go('home')">×</button><div class="lesson-progress"><span id="lessonBar"></span></div><b>❤️ <span id="lessonHearts">5</span></b></div>
+  <div class="lesson-box"><p class="success">⭐ نیا سبق · بنیادی انگریزی</p><h2 id="lessonQuestion">اسے انگریزی میں کہیں</h2><div class="mascot">🧑🏽‍🎓</div><div class="word-bubble" id="promptWord">کتاب</div><button class="btn" onclick="speak(currentQ.en,'en-US')">🔊 آواز سنیں</button><div class="word-options" id="wordOptions"></div><p id="lessonFeedback" style="min-height:28px"></p></div>
+  <div class="lesson-footer"><button class="btn" onclick="go('home')">چھوڑ دیں</button><button class="btn green" id="checkBtn" onclick="checkLesson()">جواب چیک کریں</button><button class="btn green" id="nextBtn" style="display:none" onclick="nextLesson()">جاری رکھیں →</button></div>
+ </div>
+</section>
+<div class="footer">Khizar Learn · Learn Languages. Play. Grow.</div>
+</main>
+
+<aside class="right-panel">
+ <div class="card"><h3>✨ Super Khizar</h3><div class="mascot">🦉</div><p class="muted">اپنی سیکھنے کی رفتار بڑھائیں، روزانہ پریکٹس کریں اور نئے انعامات حاصل کریں۔</p><button class="btn blue" style="width:100%" onclick="toast('Super پلان جلد دستیاب ہوگا')">Super کے بارے میں</button></div>
+ <div class="card"><h3>📅 آج کی پیش رفت</h3><div class="big" id="sideDaily">0/3</div><div class="bar"><span id="sideBar" style="width:0%"></span></div><p class="muted">اپنا روزانہ ہدف مکمل کریں۔</p></div>
+ <div class="card"><h3>📲 ڈیوائس کنیکٹ کریں</h3><p class="muted">QR کوڈ دکھائیں یا اسکین کریں۔</p><button class="btn green" style="width:100%" onclick="openQR()">QR کنیکٹ</button></div>
+</aside>
+</div>
+
+<!-- Lesson/QR/Connector modals -->
+<div class="modal" id="qrModal"><div class="modal-box"><div class="modal-head"><h2>📱 ڈیوائس کنیکٹ</h2><button class="close" onclick="closeModal('qrModal')">×</button></div><p class="muted">اس QR کو دوسرے فون یا کمپیوٹر سے اسکین کرکے Khizar Learn کھولیں۔</p><div class="two"><button class="btn green" onclick="makeQR()">QR دکھائیں</button><button class="btn" onclick="startScanner()">QR اسکین کریں</button></div><div class="qrbox" id="qrcode"><span style="color:#333">QR یہاں ظاہر ہوگا</span></div><div id="qrMessage" class="muted" style="text-align:center"></div><div id="reader" style="margin-top:15px"></div><div class="notice" style="margin-top:15px">نوٹ: یہ QR فی الحال ویب سائٹ کا لنک کھولتا ہے۔ محفوظ Cross-device Login اور اکاؤنٹ Sync کے لیے سرور، Database اور ایک وقتی تصدیق شدہ Pairing Token لازمی ہے۔</div></div></div>
+
+<div class="modal" id="connectorModal"><div class="modal-box"><div class="modal-head"><h2>نیا کنیکٹر بنائیں</h2><button class="close" onclick="closeModal('connectorModal')">×</button></div><div class="formrow"><label>کنیکٹر کا نام</label><input id="conName" placeholder="مثلاً میری لغت"></div><div class="formrow"><label>ویب سائٹ کا لنک</label><input id="conUrl" placeholder="https://example.com" dir="ltr"></div><div class="formrow"><label>ایموجی</label><input id="conIcon" value="🔗" maxlength="4"></div><button class="btn green" style="width:100%" onclick="saveConnector()">کنیکٹر محفوظ کریں</button></div></div>
+
+<div class="modal" id="profileModal"><div class="modal-box"><div class="modal-head"><h2>پروفائل تبدیل کریں</h2><button class="close" onclick="closeModal('profileModal')">×</button></div><div class="formrow"><label>آپ کا نام</label><input id="nameInput" maxlength="35"></div><button class="btn green" style="width:100%" onclick="saveProfile()">محفوظ کریں</button></div></div>
+<div class="toast" id="toast"></div>
+
+<script>
+const $=id=>document.getElementById(id);
+const defaults={xp:0,streak:1,hearts:5,lessons:0,daily:0,name:"Khizar Learner",connectors:[],lastDay:new Date().toDateString()};
+let data={...defaults};try{data={...defaults,...JSON.parse(localStorage.getItem("kl_data")||"{}")}}catch(e){}
+function save(){localStorage.setItem("kl_data",JSON.stringify(data));renderStats()}
+function renderStats(){ $("xp").textContent=data.xp;$("streak").textContent=data.streak;$("hearts").textContent=data.hearts;$("dailyDone").textContent=data.daily;$("dailyBar").style.width=Math.min(100,data.daily/3*100)+"%";$("sideDaily").textContent=data.daily+"/3";$("sideBar").style.width=Math.min(100,data.daily/3*100)+"%";$("level").textContent="Level "+(Math.floor(data.xp/100)+1);$("levelBar").style.width=(data.xp%100)+"%";$("profileName").textContent=data.name;$("profileXP").textContent=data.xp;$("profileLessons").textContent=data.lessons;$("profileStreak").textContent=data.streak+" 🔥";$("profileLevel").textContent=Math.floor(data.xp/100)+1;$("rankXP").textContent=data.xp+" XP";$("greeting").textContent="خوش آمدید، "+data.name+"!"}
+function toast(t){$("toast").textContent=t;$("toast").classList.add("show");setTimeout(()=>$("toast").classList.remove("show"),2300)}
+function go(page){document.querySelectorAll(".page").forEach(p=>p.classList.remove("active"));$(page).classList.add("active");document.querySelectorAll(".nav button").forEach(b=>b.classList.toggle("active",b.dataset.page===page));window.scrollTo(0,0)}
+$("nav").addEventListener("click",e=>{let b=e.target.closest("button[data-page]");if(b)go(b.dataset.page)});
+function sound(type){if(!$("soundToggle").checked)return;try{let ctx=new(window.AudioContext||window.webkitAudioContext)(),o=ctx.createOscillator(),g=ctx.createGain();o.connect(g);g.connect(ctx.destination);let f=type==="good"?660:type==="bad"?170:type==="win"?880:420;o.frequency.value=f;o.type="sine";g.gain.setValueAtTime(.0001,ctx.currentTime);g.gain.exponentialRampToValueAtTime(.12,ctx.currentTime+.02);g.gain.exponentialRampToValueAtTime(.0001,ctx.currentTime+(type==="win"?.35:.16));o.start();o.stop(ctx.currentTime+.4)}catch(e){}}
+function speak(text,lang){if(!$("voiceToggle").checked)return;if(!("speechSynthesis"in window)){toast("آپ کے براؤزر میں آواز دستیاب نہیں");return}speechSynthesis.cancel();let u=new SpeechSynthesisUtterance(text);u.lang=lang||"en-US";u.rate=.88;speechSynthesis.speak(u)}
+const languages=[["🇬🇧","English","انگریزی","en-US"],["🇪🇸","Spanish","ہسپانوی","es-ES"],["🇫🇷","French","فرانسیسی","fr-FR"],["🇩🇪","German","جرمن","de-DE"],["🇮🇹","Italian","اطالوی","it-IT"],["🇵🇹","Portuguese","پرتگالی","pt-PT"],["🇯🇵","Japanese","جاپانی","ja-JP"],["🇰🇷","Korean","کوریائی","ko-KR"],["🇨🇳","Chinese","چینی","zh-CN"],["🇸🇦","Arabic","عربی","ar-SA"],["🇹🇷","Turkish","ترکی","tr-TR"],["🇮🇳","Hindi","ہندی","hi-IN"],["🇵🇰","Urdu","اردو","ur-PK"],["🇷🇺","Russian","روسی","ru-RU"],["🇳🇱","Dutch","ڈچ","nl-NL"]];
+function courseCard(l){return `<div class="course"><div class="flag">${l[0]}</div><h3>${l[1]}</h3><p>${l[2]} سیکھیں، بنیادی اسباق سے آغاز کریں۔</p><div class="bar"><span style="width:${l[1]==="English"?18:0}%"></span></div><button class="btn green" onclick="chooseLanguage('${l[1]}','${l[3]}')">کورس شروع کریں</button></div>`}
+function renderCourses(){let q=($("courseSearch")?.value||"").toLowerCase();$("allCourses").innerHTML=languages.filter(l=>l.join(" ").toLowerCase().includes(q)).map(courseCard).join("")}
+function chooseLanguage(name,code){activeLanguage=name;activeCode=code;toast(name+" کورس منتخب ہوگیا");startLesson()}
+$("homeCourses").innerHTML=languages.slice(0,3).map(courseCard).join("");renderCourses();
+let activeLanguage="English",activeCode="en-US",qi=0,selected=-1;
+const questions=[{ur:"کتاب",en:"Book",opts:["Apple","Book","Water"],correct:1},{ur:"پانی",en:"Water",opts:["Water","House","Food"],correct:0},{ur:"سلام",en:"Hello",opts:["Goodbye","Please","Hello"],correct:2},{ur:"دوست",en:"Friend",opts:["School","Friend","Car"],correct:1},{ur:"خوبصورت",en:"Beautiful",opts:["Beautiful","Happy","Small"],correct:0}];
+let currentQ=questions[0];
+function startLesson(){qi=0;selected=-1;$("lessonHearts").textContent=data.hearts;renderQuestion();go("lesson")}
+function renderQuestion(){currentQ=questions[qi];selected=-1;$("lessonQuestion").textContent="اسے "+activeLanguage+" میں کہیں";$("promptWord").textContent=currentQ.ur;$("lessonBar").style.width=(qi/questions.length*100)+"%";$("lessonFeedback").textContent="";$("checkBtn").style.display="inline-block";$("nextBtn").style.display="none";$("wordOptions").innerHTML=currentQ.opts.map((o,i)=>`<button class="word" onclick="selectWord(${i},this)">${o}</button>`).join("")}
+function selectWord(i,b){selected=i;document.querySelectorAll(".word").forEach(x=>x.classList.remove("selected"));b.classList.add("selected");sound("click")}
+function checkLesson(){if(selected<0){toast("پہلے ایک جواب منتخب کریں");return}let ok=selected===currentQ.correct;if(ok){data.xp+=10;$("lessonFeedback").textContent="🎉 شاباش! درست جواب · +10 XP";$("lessonFeedback").style.color="#8de34c";sound("good")}else{data.hearts=Math.max(0,data.hearts-1);$("lessonFeedback").textContent="❌ درست جواب: "+currentQ.opts[currentQ.correct];$("lessonFeedback").style.color="#ff7180";sound("bad")}document.querySelectorAll("#wordOptions .word").forEach((b,i)=>{if(i===currentQ.correct)b.style.borderColor="#58cc02"});$("lessonHearts").textContent=data.hearts;$("checkBtn").style.display="none";$("nextBtn").style.display="inline-block";save()}
+function nextLesson(){qi++;if(qi>=questions.length){data.lessons++;data.daily=Math.min(3,data.daily+1);data.xp+=15;save();sound("win");toast("سبق مکمل! +15 بونس XP");go("home");return}renderQuestion()}
+function quickQuiz(b,correct){if($("quizFeedback").dataset.done)return;$("quizFeedback").dataset.done="1";if(correct){$("quizFeedback").textContent="بالکل درست! +5 XP";data.xp+=5;sound("good")}else{$("quizFeedback").textContent="درست جواب: سیب";sound("bad")}save()}
+let recorder=null,recordedChunks=[];
+async function recordVoice(){if(!navigator.mediaDevices?.getUserMedia){$("recordStatus").textContent="اس براؤزر میں مائیکروفون دستیاب نہیں۔ HTTPS درکار ہو سکتا ہے۔";return}try{let stream=await navigator.mediaDevices.getUserMedia({audio:true});recorder=new MediaRecorder(stream);recordedChunks=[];recorder.ondataavailable=e=>recordedChunks.push(e.data);recorder.onstop=()=>{let blob=new Blob(recordedChunks,{type:"audio/webm"}),url=URL.createObjectURL(blob);let a=document.createElement("a");a.href=url;a.download="khizar-practice.webm";a.textContent="ریکارڈنگ سنیں / ڈاؤن لوڈ کریں";$("recordStatus").innerHTML="ریکارڈنگ تیار ہے: ";$("recordStatus").appendChild(a);stream.getTracks().forEach(t=>t.stop())};recorder.start();$("recordStatus").textContent="ریکارڈنگ جاری ہے… دوبارہ بٹن دبائیں تو بند ہوگی۔";$("recordBtn")?.remove();setTimeout(()=>{if(recorder?.state==="recording")recorder.stop()},10000);toast("زیادہ سے زیادہ 10 سیکنڈ ریکارڈنگ")}catch(e){$("recordStatus").textContent="مائیکروفون اجازت نہیں ملی۔"}}
+function openModal(id){$(id).classList.add("show")}function closeModal(id){$(id).classList.remove("show")}
+function openQR(){openModal("qrModal");$("qrcode").innerHTML="<span style='color:#333'>QR دکھانے کے لیے بٹن دبائیں</span>";$("qrMessage").textContent=""}
+function makeQR(){let base=location.href.split("?")[0].split("#")[0];if(base.startsWith("file:")){$("qrMessage").textContent="QR لنک بنانے کے لیے ویب سائٹ کو HTTPS ہوسٹنگ پر اپلوڈ کریں۔";return}let token=crypto.randomUUID?crypto.randomUUID():Math.random().toString(36).slice(2);let url=base+"?join="+encodeURIComponent(token);$("qrcode").innerHTML="";new QRCode($("qrcode"),{text:url,width:180,height:180,colorDark:"#102126",colorLight:"#ffffff",correctLevel:QRCode.CorrectLevel.H});$("qrMessage").textContent="اس کوڈ کو دوسرے ڈیوائس سے اسکین کریں۔ یہ ویب سائٹ کھولے گا۔";sound("good")}
+let scanner=null;
+async function startScanner(){if(!window.Html5Qrcode){$("qrMessage").textContent="QR Scanner لائبریری لوڈ نہیں ہوئی۔ انٹرنیٹ چیک کریں۔";return}try{if(scanner){await scanner.stop().catch(()=>{})}scanner=new Html5Qrcode("reader");await scanner.start({facingMode:"environment"},{fps:10,qrbox:{width:220,height:220}},decoded=>{scanner.stop().catch(()=>{});$("qrMessage").textContent="QR کامیابی سے اسکین ہوگیا: "+decoded;try{let u=new URL(decoded);if(u.protocol==="https:"||u.protocol==="http:"){if(confirm("اس ویب لنک کو کھولیں؟"))location.href=u.href}}catch(e){toast("QR میں درست ویب لنک نہیں ہے")}});$("qrMessage").textContent="کیمرہ کھل گیا؛ QR کو فریم میں لائیں۔"}catch(e){$("qrMessage").textContent="کیمرہ نہیں کھل سکا۔ کیمرہ اجازت دیں اور HTTPS استعمال کریں۔"}}
+function openConnector(){openModal("connectorModal")}
+function saveConnector(){let name=$("conName").value.trim(),url=$("conUrl").value.trim(),icon=$("conIcon").value.trim()||"🔗";try{let u=new URL(url);if(!["http:","https:"].includes(u.protocol))throw 0}catch(e){toast("درست http یا https لنک درج کریں");return}if(!name){toast("کنیکٹر کا نام لکھیں");return}data.connectors.push({name,url,icon});save();renderConnectors();closeModal("connectorModal");$("conName").value="";$("conUrl").value="";toast("کنیکٹر محفوظ ہوگیا")}
+function renderConnectors(){$("connectorList").innerHTML=data.connectors.length?data.connectors.map((c,i)=>`<div class="connector"><div><b>${c.icon} ${escapeHTML(c.name)}</b><div class="muted" dir="ltr" style="font-size:11px">${escapeHTML(c.url)}</div></div><div><a class="btn" href="${escapeAttr(c.url)}" target="_blank" rel="noopener">کھولیں ↗</a> <button class="btn" onclick="removeConnector(${i})">×</button></div></div>`).join(""):"<p class='muted'>ابھی کوئی کنیکٹر نہیں۔ اپنا پہلا کنیکٹر بنائیں۔</p>"}
+function removeConnector(i){data.connectors.splice(i,1);save();renderConnectors()}
+function escapeHTML(s){return String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}function escapeAttr(s){return escapeHTML(s)}
+function editProfile(){$("nameInput").value=data.name;openModal("profileModal")}function saveProfile(){data.name=$("nameInput").value.trim()||"Khizar Learner";save();closeModal("profileModal");toast("پروفائل اپڈیٹ ہوگیا")}
+function setUILang(){let en=$("uiLang").value==="English";document.documentElement.lang=en?"en":"ur";document.documentElement.dir=en?"ltr":"rtl";toast("Language preference updated")}
+function resetData(){if(confirm("کیا آپ اپنی مقامی پروگریس ری سیٹ کرنا چاہتے ہیں؟")){data={...defaults};save();renderConnectors();toast("پروگریس ری سیٹ ہوگئی")}}
+if(data.lastDay!==new Date().toDateString()){data.daily=0;data.lastDay=new Date().toDateString();save()}
+renderStats();renderConnectors();
+if(new URLSearchParams(location.search).has("join")){setTimeout(()=>toast("Khizar Learn میں خوش آمدید!"),500)}
+</script>
+</body></html>
